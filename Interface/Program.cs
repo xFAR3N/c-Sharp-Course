@@ -23,6 +23,7 @@
             {
                 return 4 * a;
             }
+        }
             static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
