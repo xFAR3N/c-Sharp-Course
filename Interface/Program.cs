@@ -24,6 +24,23 @@
                 return 4 * a;
             }
         }
+        public class Circle : IShape
+        {
+            private double r;
+            public Circle(double r)
+            {
+                this.r = r;
+            }
+            public double CalculateArea()
+            {
+                return (Math.PI * Math.Pow(r, 2));
+            }
+            public double CalculatePerimeter()
+            {
+                return 2 * r * Math.PI;
+            }
+
+        }
             static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
