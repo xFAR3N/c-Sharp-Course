@@ -43,7 +43,9 @@
         }
             static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var s1 = new Square(10);
+            var c1 = new Circle(10);
+            Console.WriteLine();
         }
     }
 }
