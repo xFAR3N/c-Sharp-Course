@@ -6,9 +6,18 @@
         {
             private List<string> _tasks = new List<string>();
 
-            public void AddTask(string task) => _tasks.Add(task);
+            public void AddTask(string task)
+            {
+                _tasks.Add(task);
+            }
 
-            public void RemoveTask(string task) => _tasks.Remove(task);
+            public void RemoveTask(string task)
+            {
+                if (_tasks.Contains(task))
+                {
+                    _tasks.Remove(task);
+                }
+            }
 
             public List<string> GetTasks() => _tasks;
         }

@@ -41,11 +41,12 @@
             }
 
         }
-            static void Main(string[] args)
+        static void Main(string[] args)
         {
             var s1 = new Square(10);
             var c1 = new Circle(10);
-            Console.WriteLine();
+            Console.WriteLine($"Square area: {s1.CalculateArea()}, Square Perimeter: {s1.CalculatePerimeter()}");
+            Console.WriteLine($"Square area: {c1.CalculateArea()}, Square Perimeter: {c1.CalculatePerimeter()}");
         }
     }
 }
